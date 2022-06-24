@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <img class="img-logo" src="https://cdn-icons-png.flaticon.com/512/346/346399.png" alt="logo da calculadora">
+
+        <nav>
+            <a class="nav-menu" href="#">SOMA</a>
+            <a class="nav-menu" href="#">SUBTRAÇÃO</a>
+            <a class="nav-menu" href="#">DIVISÃO</a>
+            <a class="nav-menu" href="#">MULTIPLICAÇÃO</a>
+        </nav>
+        
+    </header>
+
+    <main>
+        <article>
+            <h1 class="titulo">Calculadora</h1>
+            <h2 class="subtitulo">Descrição da função da calculadora</h2>
+            <p class="paragrafo">Texto alternativo para explicar cada função que há na calculadora.</p>            
+        </article>
+        
+        <aside>            
+            <p id="resultado"></p>
+
+            <div>
+                <button type="submit" onclick="insert('7')">7</button>
+                <button type="submit" onclick="insert('8')">8</button>
+                <button type="submit" onclick="insert('9')">9</button>
+                <button type="submit" onclick="insert('/')">/</button>          
+            </div>
+
+            <div>            
+                <button type="submit" onclick="insert('4')">4</button>
+                <button type="submit" onclick="insert('5')">5</button>
+                <button type="submit" onclick="insert('6')">6</button>
+                <button type="submit" onclick="insert('*')">x</button>
+            </div>
+
+            <div>
+                <button type="submit" onclick="insert('1')">1</button>
+                <button type="submit" onclick="insert('2')">2</button>
+                <button type="submit" onclick="insert('3')">3</button>
+                <button type="submit" onclick="insert('-')">-</button>
+            </div>
+
+            <div>           
+                <button type="submit" onclick="insert('0')">0</button>
+                <button type="submit" onclick="insert('.')">.</button>
+                <button type="submit" onclick="insert('+')">+</button>
+                <button type="submit" onclick="calcular()">=</button>
+            </div>
+
+            <div>
+                <button class="btn-limpar" type="submit" onclick="clean()">Limpar</button>
+                <button type="submit" onclick="back()">←</button>
+            </div>
+        </aside>    
+        
+    </main>
+
+    <footer>
+        <img class="img-footer" src="https://media.moddb.com/images/presskit/1/2/1590/Logo.png" alt="Logo Nodashi">
+    </footer>
+    
+</body>
+</html>
